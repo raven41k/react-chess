@@ -1,0 +1,99 @@
+body {
+  font: 14px "Century Gothic", sans-serif;
+  margin: 20px;
+  background-color: #ECECEA;
+}
+* {
+  box-sizing: border-box
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  height: 12.5%;
+}
+.game-board > div {
+  height: 85vh;
+  max-width: 900px;
+  margin: auto;
+}
+
+.square {
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  width: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark-square{
+background-color: rgb(73, 71, 71);
+}
+
+.light-square{
+    background-color: #ddd;
+}
+
+#player-turn-box{
+  width: 32px;
+  margin: 0 10px;
+  height: 32px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.btn {
+  outline: none;
+  border: none;
+  padding: 7px 12px;
+  background-color: #079773;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 15px;
+}
+.btn:hover {
+  background-color: rgb(1, 71, 77);
+}
+.game-status {
+  color: rgb(143, 44, 44);
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:600px) {
+  .game-board > div {
+    height: 50vh;
+  }
+  .square {
+    width: 12.5%;
+  }
+  .board-row {
+    height: 10%;
+  }
+}
