@@ -28,7 +28,7 @@ export default class Board extends React.Component {
     return (
       <div>
         {board}
-        {/* <AppDragDropDemo/> */}
+        <AppDragDropDemo/>
       </div>
     );
   }
